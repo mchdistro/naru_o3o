@@ -521,6 +521,70 @@
             "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/voicechat-forge-1.20.1-2.6.4.jar",
             "MD5": "d363fc0aedbe77fa4c180fa70079009d"
           }
+        },
+        {
+          "id": "oculus.properties",
+          "name": "oculus.properties",
+          "type": "File",
+          "artifact": {
+            "size": 285,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/config/oculus.properties",
+            "path": "config/oculus.properties"
+          }
+        },
+        {
+          "id": "options.txt",
+          "name": "options.txt",
+          "type": "File",
+          "artifact": {
+            "size": 7330,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/options.txt",
+            "path": "options.txt"
+          }
+        },
+        {
+          "id": "AstraLex_V89.0.zip",
+          "name": "AstraLex_V89.0.zip",
+          "type": "File",
+          "artifact": {
+            "size": 3180580,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/shaderpacks/AstraLex_V89.0.zip",
+            "MD5": "ab0247fddf9b4aa21343f0c0ae7aaf29",
+            "path": "shaderpacks/AstraLex_V89.0.zip"
+          }
+        },
+        {
+          "id": "BSL_v10.0.zip",
+          "name": "BSL_v10.0.zip",
+          "type": "File",
+          "artifact": {
+            "size": 1121678,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/shaderpacks/BSL_v10.0.zip",
+            "MD5": "a4d53a8d2a97d99e4e9ebc16eae7a39c",
+            "path": "shaderpacks/BSL_v10.0.zip"
+          }
+        },
+        {
+          "id": "ComplementaryUnbound_r5.5.1.zip",
+          "name": "ComplementaryUnbound_r5.5.1.zip",
+          "type": "File",
+          "artifact": {
+            "size": 456332,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/shaderpacks/ComplementaryUnbound_r5.5.1.zip",
+            "MD5": "576ef06da170458879f3a03e685d487a",
+            "path": "shaderpacks/ComplementaryUnbound_r5.5.1.zip"
+          }
+        },
+        {
+          "id": "photon_v1.2a.zip",
+          "name": "photon_v1.2a.zip",
+          "type": "File",
+          "artifact": {
+            "size": 3737845,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/shaderpacks/photon_v1.2a.zip",
+            "MD5": "9189fd0de30af6ea20765a8f05380583",
+            "path": "shaderpacks/photon_v1.2a.zip"
+          }
         }
       ]
     }
