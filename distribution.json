@@ -537,7 +537,7 @@
           "name": "options.txt",
           "type": "File",
           "artifact": {
-            "size": 7330,
+            "size": 145,
             "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/options.txt",
             "path": "options.txt"
           }
