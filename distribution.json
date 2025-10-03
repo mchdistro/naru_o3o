@@ -13,7 +13,7 @@
       "description": "Minecraft 1.20.1 (Forge v47.4.9)",
       "icon": "https://github.com/mchdistro/naru_o3o/raw/main/server-icon.png",
       "version": "1.0.0",
-      "address": "localhost:25565",
+      "address": "mc.gotiger.dev:20203",
       "minecraftVersion": "1.20.1",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
@@ -540,6 +540,17 @@
             "size": 145,
             "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/options.txt",
             "path": "options.txt"
+          }
+        },
+        {
+          "id": "servers.dat",
+          "name": "servers.dat",
+          "type": "File",
+          "artifact": {
+            "size": 154,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/servers.dat",
+            "MD5": "ea788bd5e054598403eb99df9fa2fd61",
+            "path": "servers.dat"
           }
         },
         {
