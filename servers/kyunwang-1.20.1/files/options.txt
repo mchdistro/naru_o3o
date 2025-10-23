@@ -1,7 +1,0 @@
-version:3465
-lang:ko_kr
-narrator:0
-tutorialStep:none
-skipMultiplayerWarning:false
-onboardAccessibility:true
-key_key.chat:key.keyboard.enter

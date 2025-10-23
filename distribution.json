@@ -8,8 +8,8 @@
   },
   "servers": [
     {
-      "id": "kyunwang-1.20.1",
-      "name": "엔더켠왕",
+      "id": "naru_o3o-1.20.1",
+      "name": "서버?!",
       "description": "Minecraft 1.20.1 (Forge v47.4.9)",
       "icon": "https://github.com/mchdistro/naru_o3o/raw/main/server-icon.png",
       "version": "1.0.0",
@@ -433,43 +433,415 @@
           ]
         },
         {
-          "id": "de.maxhenkel:corpse:1.20.1-1.0.23@jar",
-          "name": "Corpse",
+          "id": "squeek.appleskin:appleskin:2.5.1+mc1.20.1@jar",
+          "name": "AppleSkin",
           "type": "ForgeMod",
           "artifact": {
-            "size": 245643,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/corpse-forge-1.20.1-1.0.23.jar",
-            "MD5": "dd13eed6de02864d464437c640ff7452"
+            "size": 47428,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/appleskin-forge-mc1.20.1-2.5.1.jar",
+            "MD5": "dae63cea9c951dda542a4005ceef3953"
+          },
+          "required": {
+            "value": false
           }
         },
         {
-          "id": "me.jellysquid.mods.sodium.client:embeddium:0.3.31+mc1.20.1@jar",
-          "name": "Embeddium",
+          "id": "it.mralxart.arcaneabilities:arcane_abilities:0.3.0@jar",
+          "name": "ArcaneAbilities",
           "type": "ForgeMod",
           "artifact": {
-            "size": 1320675,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/embeddium-0.3.31+mc1.20.1.jar",
-            "MD5": "1dfb2ee49ce9ad5d484ff3eea0d628b7"
+            "size": 751339,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/arcane_abilities-0.3.0.jar",
+            "MD5": "a36d5abd3e358e70780949262e3ef485"
+          },
+          "required": {
+            "value": false
           }
         },
         {
-          "id": "mezz.jei:jei:15.20.0.116@jar",
-          "name": "Just Enough Items",
+          "id": "dev.architectury:architectury:9.2.14@jar",
+          "name": "Architectury",
           "type": "ForgeMod",
           "artifact": {
-            "size": 1387236,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/jei-1.20.1-forge-15.20.0.116.jar",
-            "MD5": "89817a7201d47a7a23c3f9d217f891f4"
+            "size": 580602,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/architectury-9.2.14-forge.jar",
+            "MD5": "76b40d407b6bf0257dd1dab6d3d395d5"
+          },
+          "required": {
+            "value": false
           }
         },
         {
-          "id": "journeymap:journeymap:5.10.3@jar",
-          "name": "Journeymap",
+          "id": "artifacts:artifacts:9.5.16@jar",
+          "name": "Artifacts",
           "type": "ForgeMod",
           "artifact": {
-            "size": 7160406,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/journeymap-1.20.1-5.10.3-forge.jar",
-            "MD5": "be46ebd4654a75a03ecbc5497d2ddce9"
+            "size": 850457,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/artifacts-forge-9.5.16.jar",
+            "MD5": "85081468e7498005f5dfdab2ae520097"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "mod.azure:azurelib:3.1.1@jar",
+          "name": "AzureLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1049802,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/azurelib-neo-1.20.1-3.1.1.jar",
+            "MD5": "5c6413047614b6ca5845aa3aeea9ad56"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "forge.me.thosea:badoptimizations:2.3.1@jar",
+          "name": "BadOptimizations",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 452475,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/BadOptimizations-2.3.1-1.20.1.jar",
+            "MD5": "1c89fecc5ed73e722b24cba5cb42399c"
+          }
+        },
+        {
+          "id": "net.blay09.mods:balm:7.3.37@jar",
+          "name": "Balm",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 590487,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/balm-forge-1.20.1-7.3.37-all.jar",
+            "MD5": "d1a4f41280905b9268dd517e403b2160"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "net.bettercombat:bettercombat:1.8.6+1.20.1@jar",
+          "name": "Better Combat",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1050118,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/bettercombat-forge-1.8.6+1.20.1.jar",
+            "MD5": "28f4682af86e8bdee7b808fa0adbdf81"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "me.treyruffy:betterf3:7.0.2@jar",
+          "name": "BetterF3",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 468517,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/BetterF3-7.0.2-Forge-1.20.1.jar",
+            "MD5": "7411ae023390cf6b148f05a6b685279f"
+          }
+        },
+        {
+          "id": "biomesoplenty.forge.core:biomesoplenty:19.0.0.96@jar",
+          "name": "Biomes O' Plenty",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 22381010,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/BiomesOPlenty-forge-1.20.1-19.0.0.96.jar",
+            "MD5": "1b20a91a2b013ccad6cd56279a459b12"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "net.darkhax:bookshelf:20.2.13@jar",
+          "name": "Bookshelf",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 343962,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Bookshelf-Forge-1.20.1-20.2.13.jar",
+            "MD5": "46c8e7f9bcfa984bd576e448df2beb25"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "cech12.bucketlib:bucketlib:1.20.1-2.3.7.1@jar",
+          "name": "BucketLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 153080,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/bucketlib-1.20.1-2.3.7.1.jar",
+            "MD5": "321e796e36b2070e28148ef2cb5a08ed"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "top.theillusivec4:caelus:3.2.0+1.20.1@jar",
+          "name": "Caelus API",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 40125,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/caelus-forge-3.2.0+1.20.1.jar",
+            "MD5": "ac909c99a2a96ead2073f98bf0dd7b78"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "net.acetheeldritchking:cataclysm_spellbooks:1.2.7-1.20.1@jar",
+          "name": "Cataclysm: Spellbooks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1261502,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/cataclysm_spellbooks-1.2.7-1.20.1-all.jar",
+            "MD5": "41e6ce08b64d5063e56b4584541fdc7f"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "me.shedaniel.clothconfig:cloth_config:11.1.136@jar",
+          "name": "Cloth Config v10 API",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1181413,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/cloth-config-11.1.136-forge.jar",
+            "MD5": "ca5de5acbcb4a30c010aa6953bd7ef53"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "com.blamejared:controlling:12.0.2@jar",
+          "name": "Controlling",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 115280,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/Controlling-forge-1.20.1-12.0.2.jar",
+            "MD5": "dc94fc03e516d96aad393b26910c81ad"
+          }
+        },
+        {
+          "id": "top.theillusivec4:curios:5.14.1+1.20.1@jar",
+          "name": "Curios API",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 398066,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/curios-forge-5.14.1+1.20.1.jar",
+            "MD5": "2fdcc97cbc66c4b2492b407c792e7159"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "net.lostluma.dynamic_fps.impl:dynamic_fps:3.9.5@jar",
+          "name": "Dynamic FPS",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 376061,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/dynamic-fps-3.9.5+minecraft-1.20.0-forge.jar",
+            "MD5": "16fcbe43302a38eca0777931387ab865"
+          }
+        },
+        {
+          "id": "fzzyhmstrs.emi_loot:emi_loot:0.7.6+1.20.1+forge@jar",
+          "name": "EMI Loot",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 414381,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/emi_loot-0.7.6+1.20.1+forge.jar",
+            "MD5": "e74052f7bca32958e084e74fc1c89b68"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "dev.emi.emi.platform:emi:1.1.22+1.20.1+forge@jar",
+          "name": "EMI",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1048567,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/emi-1.1.22+1.20.1+forge.jar",
+            "MD5": "441c582c6e8a1d6fd9e3d16a27c1a39e"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "com.teamremastered:endrem:5.3.3-R-1.20.1@jar",
+          "name": "End Remastered",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 889634,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/endrem_forge-5.3.3-R-1.20.1.jar",
+            "MD5": "1de1aa97b353be8fe243f3a60cfc902e"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "traben.entity_model_features:entity_model_features:3.0.1@jar",
+          "name": "Entity Model Features",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 657484,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/entity_model_features_1.20.1-forge-3.0.1.jar",
+            "MD5": "9389de85f96d0a97953c74faab9c4d60"
+          }
+        },
+        {
+          "id": "traben.entity_texture_features:entity_texture_features:7.0.2@jar",
+          "name": "Entity Texture Features",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 894117,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/entity_texture_features_1.20.1-forge-7.0.2.jar",
+            "MD5": "1b13a36cd9ba7686d997a99001226373"
+          }
+        },
+        {
+          "id": "dev.tr7zw:entityculling:1.9.2@jar",
+          "name": "EntityCulling",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 477372,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/entityculling-forge-1.9.2-mc1.20.1.jar",
+            "MD5": "e756916c39c6cae945c321c3bb2ab0f9"
+          }
+        },
+        {
+          "id": "malte0811.ferritecore:ferritecore:6.0.1@jar",
+          "name": "Ferrite Core",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 123034,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/ferritecore-6.0.1-forge.jar",
+            "MD5": "f52f538207a4829d7060550092ce2383"
+          }
+        },
+        {
+          "id": "com.faboslav:friendsandfoes:3.0.9@jar",
+          "name": "Friends&Foes",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3622128,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/friendsandfoes-forge-mc1.20.1-3.0.9.jar",
+            "MD5": "d85705f9ccc062d77f1204f86aff8e1d"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "mod.alexndr:fusion:1.20.1-6.0.0.3@jar",
+          "name": "SimpleOres:Fusion",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 496254,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Fusion-1.20.1-6.0.0.3.jar",
+            "MD5": "196e8f5379a5920536882c10b38bf5e4"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "me.fzzyhmstrs:fzzy_config:0.7.3+1.20.1+forge@jar",
+          "name": "Fzzy Config",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2312969,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/fzzy_config-0.7.3+1.20.1+forge.jar",
+            "MD5": "bcbfb7e94f16a15ad5d13fb4999a5b78"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "software.bernie.example:geckolib:4.8.2@jar",
+          "name": "GeckoLib 4",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1038979,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/geckolib-forge-1.20.1-4.8.2.jar",
+            "MD5": "d1ff73da16b6fc163d6c5ed3d9734dde"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "glitchcore:glitchcore:0.0.1.1@jar",
+          "name": "GlitchCore",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 87551,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/GlitchCore-forge-1.20.1-0.0.1.1.jar",
+            "MD5": "87d2b7104f4069d44741f58ebe1bb2bd"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "net.raphimc:immediatelyfast:1.5.2+1.20.4@jar",
+          "name": "ImmediatelyFast",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 425140,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
+            "MD5": "a9497bda5f3fd160c248d4a8d4499e15"
+          }
+        },
+        {
+          "id": "org.anti_ad.mc.ipnext:inventoryprofilesnext:1.10.19@jar",
+          "name": "Inventory Profiles Next",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1456863,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/InventoryProfilesNext-forge-1.20-1.10.19.jar",
+            "MD5": "eafdba0041b0811e9e7afda28a5927fe"
+          }
+        },
+        {
+          "id": "io.redspace.ironsspellbooks:irons_spellbooks:1.20.1-3.4.0.9@jar",
+          "name": "Iron's Spells 'n Spellbooks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 8838604,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/irons_spellbooks-1.20.1-3.4.0.9.jar",
+            "MD5": "ffc9267a2ef52074ae1489b5b0ad06c5"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "snownee.jade:jade:11.13.2+forge@jar",
+          "name": "Jade",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 552486,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Jade-1.20.1-Forge-11.13.2.jar",
+            "MD5": "7c349670f77fd64b9e9854c4a8d82fcc"
+          },
+          "required": {
+            "value": false
           }
         },
         {
@@ -478,8 +850,119 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 315488,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/koreanpatch-forge-1.9.0+mc1.20.1.jar",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/koreanpatch-forge-1.9.0+mc1.20.1.jar",
             "MD5": "dc6a73dcbec683185bd2e3c87ad8fb17"
+          }
+        },
+        {
+          "id": "generated.forgemod:kotlinforforge:4.11.0-all@jar",
+          "name": "Kotlinforforge",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 7193768,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/kotlinforforge-4.11.0-all.jar",
+            "MD5": "417caa90d17dc86cf7d24b802c2a5c56"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "com.github.l_ender:cataclysm:3.16@jar",
+          "name": "Cataclysm",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 127993805,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/L_Enders_Cataclysm-3.16.jar",
+            "MD5": "de747fb259b761f7b872654516fa27b3"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "org.anti_ad.mc:libipn:4.0.2@jar",
+          "name": "LibIPN",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 693301,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/libIPN-forge-1.20-4.0.2.jar",
+            "MD5": "ef3a86f4867dba031dd6adef7e45d396"
+          }
+        },
+        {
+          "id": "com.github.l_ender:lionfishapi:2.4@jar",
+          "name": "LionfishAPI",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 165468,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/lionfishapi-2.4.jar",
+            "MD5": "53ec5280c6db0984f4bee51b7ebf5800"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "noobanidus.mods:lootr:0.7.35.92@jar",
+          "name": "Lootr",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 460882,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/lootr-forge-1.20-0.7.35.93.jar",
+            "MD5": "2d5374b809d9ec1d7700a194b2fd0dd5"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "org.embeddedt.modernfix.forge.init:modernfix:5.24.4+mc1.20.1@jar",
+          "name": "ModernFix",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 880557,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/modernfix-forge-5.24.4+mc1.20.1.jar",
+            "MD5": "1d729a283f14fdbf1021ff4f0c88b0ec"
+          }
+        },
+        {
+          "id": "com.chaosthedude:naturescompass:1.20.1-1.11.2-forge@jar",
+          "name": "Nature's Compass",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 215119,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/NaturesCompass-1.20.1-1.11.2-forge.jar",
+            "MD5": "7c05072645b1aae529b1e38c74b87c4c"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "com.aizistral:nochatreports:1.20.1-v2.2.2@jar",
+          "name": "No Chat Reports",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 272740,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/NoChatReports-FORGE-1.20.1-v2.2.2.jar",
+            "MD5": "3153d1e860c6fefe6dac26efdb5c40c6"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "it.hurts.octostudios:octolib:0.5.0.1@jar",
+          "name": "OctoLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 424035,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+            "MD5": "6b2fd012966b13a96ce4f68ae42eab8c"
+          },
+          "required": {
+            "value": false
           }
         },
         {
@@ -488,38 +971,201 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 2851119,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/oculus-mc1.20.1-1.8.0.jar",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/oculus-mc1.20.1-1.8.0.jar",
             "MD5": "1dd891634ac21591b5a692471f112572"
           }
         },
         {
-          "id": "net.p3pp3rf1y:sophisticatedbackpacks:3.24.8.1386@jar",
+          "id": "dev.tonimatas:packetfixer:3.3.0@jar",
+          "name": "PacketFixer",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 190422,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/packetfixer-3.3.0-1.18-1.20.4-merged.jar",
+            "MD5": "75045a749fde88dc20972e34bb815f29"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "dev.kosmx.playeranim:playeranimator:1.0.2-rc1+1.20@jar",
+          "name": "Player Animator",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 181437,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+            "MD5": "46f8554181d4d240075ea4919d01fd01"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "it.hurts.sskirillss:relics:0.8.0.11@jar",
+          "name": "Relics",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1518437,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/relics-1.20.1-0.8.0.11.jar",
+            "MD5": "450bc342776c6e63294453377c50dd1c"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "com.teamresourceful:resourcefullib:2.1.29@jar",
+          "name": "Resourceful Lib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 432753,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/resourcefullib-forge-1.20.1-2.1.29.jar",
+            "MD5": "a040c6cc86f653fddf280ff3af9068f0"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "generated.forgemod:rrls:4.0.6.1+mc1.20.1-forge@jar",
+          "name": "Remove Reloading Screen",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 277896,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/rrls-4.0.6.1+mc1.20.1-forge.jar",
+            "MD5": "6ff0f56b3e745f8da8759cda0a70c236"
+          }
+        },
+        {
+          "id": "me.jellysquid.mods.sodium.client:rubidium:0.7.1@jar",
+          "name": "Rubidium",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 704856,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/rubidium-mc1.20.1-0.7.1.jar",
+            "MD5": "5a6a9dbad21f4d67f967c6ce369ecb0e"
+          }
+        },
+        {
+          "id": "com.blamejared:searchables:1.0.3@jar",
+          "name": "Searchables",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 77732,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/Searchables-forge-1.20.1-1.0.3.jar",
+            "MD5": "68fb3fa702de7e10194c5b8a3d25b5b0"
+          }
+        },
+        {
+          "id": "mod.alexndr:simplecorelib:1.20.1-6.0.1.2@jar",
+          "name": "SimpleCoreLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 175942,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/SimpleCoreLib-1.20.1-6.0.1.2.jar",
+            "MD5": "329da3e083f92e73d789a688c79b0cf4"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "mod.alexndr:simpleores:1.20.1-6.0.0.3@jar",
+          "name": "Simple Ores",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 497328,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/SimpleOres2-1.20.1-6.0.0.3.jar",
+            "MD5": "4517d98dc21da2895ad21cccb42056cf"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "net.p3pp3rf1y:sophisticatedbackpacks:3.24.10.1404@jar",
           "name": "Sophisticated Backpacks",
           "type": "ForgeMod",
           "artifact": {
-            "size": 970976,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/sophisticatedbackpacks-1.20.1-3.24.8.1386.jar",
-            "MD5": "8e6a6a2e3f7c567189b27601a67127a9"
+            "size": 973179,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/sophisticatedbackpacks-1.20.1-3.24.10.1404.jar",
+            "MD5": "3763bdea2b948e7212962de174cc8422"
+          },
+          "required": {
+            "value": false
           }
         },
         {
-          "id": "net.p3pp3rf1y:sophisticatedcore:1.2.96.1185@jar",
+          "id": "net.p3pp3rf1y:sophisticatedcore:1.2.105.1230@jar",
           "name": "Sophisticated Core",
           "type": "ForgeMod",
           "artifact": {
-            "size": 1397586,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/sophisticatedcore-1.20.1-1.2.96.1185.jar",
-            "MD5": "f31581e1f3b030d1ba16c210fa8cb838"
+            "size": 1438972,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/sophisticatedcore-1.20.1-1.2.105.1230.jar",
+            "MD5": "daacf2e1f0d7971d939950fa1a298add"
+          },
+          "required": {
+            "value": false
           }
         },
         {
-          "id": "de.maxhenkel.voicechat:voicechat:1.20.1-2.6.4@jar",
-          "name": "Simple Voice Chat",
+          "id": "terrablender.core:terrablender:3.0.1.10@jar",
+          "name": "TerraBlender",
           "type": "ForgeMod",
           "artifact": {
-            "size": 4888421,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/forgemods/required/voicechat-forge-1.20.1-2.6.4.jar",
-            "MD5": "d363fc0aedbe77fa4c180fa70079009d"
+            "size": 107533,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+            "MD5": "1f88ad1b2e0d196f0caf7c03a4abf893"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "toni.lib:txnilib:1.0.24@jar",
+          "name": "TxniLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3743339,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/txnilib-forge-1.0.24-1.20.1.jar",
+            "MD5": "31823d0999fda413af6dc226481e404a"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "net.blay09.mods:waystones:14.1.17@jar",
+          "name": "Waystones",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 518288,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/waystones-forge-1.20.1-14.1.17.jar",
+            "MD5": "035eeccd86c7c0a00582b913e264aa81"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "xaero.minimap:xaerominimap:25.2.10@jar",
+          "name": "Xaero's Minimap",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1723029,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/Xaeros_Minimap_25.2.10_Forge_1.20.jar",
+            "MD5": "2b2bfaf3a1872b83c57aaa51c73f10d9"
+          }
+        },
+        {
+          "id": "xaero.map:xaeroworldmap:1.39.12@jar",
+          "name": "Xaero's World Map",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 960799,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/required/XaerosWorldMap_1.39.12_Forge_1.20.jar",
+            "MD5": "002d9a661be7e982db177d7b0fc8d49e"
           }
         },
         {
@@ -528,7 +1174,7 @@
           "type": "File",
           "artifact": {
             "size": 285,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/config/oculus.properties",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/config/oculus.properties",
             "path": "config/oculus.properties"
           }
         },
@@ -538,7 +1184,7 @@
           "type": "File",
           "artifact": {
             "size": 145,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/options.txt",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/options.txt",
             "path": "options.txt"
           }
         },
@@ -548,7 +1194,7 @@
           "type": "File",
           "artifact": {
             "size": 154,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/servers.dat",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/servers.dat",
             "MD5": "ea788bd5e054598403eb99df9fa2fd61",
             "path": "servers.dat"
           }
@@ -559,7 +1205,7 @@
           "type": "File",
           "artifact": {
             "size": 3180580,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/shaderpacks/AstraLex_V89.0.zip",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/shaderpacks/AstraLex_V89.0.zip",
             "MD5": "ab0247fddf9b4aa21343f0c0ae7aaf29",
             "path": "shaderpacks/AstraLex_V89.0.zip"
           }
@@ -570,7 +1216,7 @@
           "type": "File",
           "artifact": {
             "size": 1121678,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/shaderpacks/BSL_v10.0.zip",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/shaderpacks/BSL_v10.0.zip",
             "MD5": "a4d53a8d2a97d99e4e9ebc16eae7a39c",
             "path": "shaderpacks/BSL_v10.0.zip"
           }
@@ -581,7 +1227,7 @@
           "type": "File",
           "artifact": {
             "size": 456332,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/shaderpacks/ComplementaryUnbound_r5.5.1.zip",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/shaderpacks/ComplementaryUnbound_r5.5.1.zip",
             "MD5": "576ef06da170458879f3a03e685d487a",
             "path": "shaderpacks/ComplementaryUnbound_r5.5.1.zip"
           }
@@ -592,7 +1238,7 @@
           "type": "File",
           "artifact": {
             "size": 3737845,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/kyunwang-1.20.1/files/shaderpacks/photon_v1.2a.zip",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/shaderpacks/photon_v1.2a.zip",
             "MD5": "9189fd0de30af6ea20765a8f05380583",
             "path": "shaderpacks/photon_v1.2a.zip"
           }
