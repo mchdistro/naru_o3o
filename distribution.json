@@ -8,13 +8,13 @@
   },
   "servers": [
     {
-      "id": "naru_o3o-1.20.1",
-      "name": "서버?!",
-      "description": "Minecraft 1.20.1 (Forge v47.4.9)",
+      "id": "oneBlock-1.21.1",
+      "name": "원블럭",
+      "description": "Minecraft 1.21.1 (Forge v52.1.8)",
       "icon": "https://github.com/mchdistro/naru_o3o/raw/main/server-icon.png",
       "version": "1.0.0",
-      "address": "mc.gotiger.dev:20203",
-      "minecraftVersion": "1.20.1",
+      "address": "localhost:25565",
+      "minecraftVersion": "1.21.1",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
         "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
@@ -22,132 +22,173 @@
       },
       "mainServer": true,
       "autoconnect": true,
+      "javaOptions": {
+        "supported": "=>21",
+        "suggestedMajor": 21,
+        "platformOptions": [
+          {
+            "platform": "win32",
+            "architecture": "x64",
+            "distribution": "TEMURIN"
+          }
+        ],
+        "ram": {
+          "minimum": 6144,
+          "recommended": 8192
+        }
+      },
       "modules": [
         {
-          "id": "net.minecraftforge:lowcodelanguage:1.20.1-47.4.9",
-          "name": "Minecraft Forge (lowcodelanguage)",
+          "id": "net.minecraftforge:forge:1.21.1-52.1.8:universal",
+          "name": "Minecraft Forge (universal jar)",
           "type": "ForgeHosted",
           "classpath": true,
           "artifact": {
-            "size": 7398,
-            "MD5": "7fb1c4afb795cb1d577d6fed0b902a41",
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/lowcodelanguage/1.20.1-47.4.9/lowcodelanguage-1.20.1-47.4.9.jar"
+            "size": 2961395,
+            "MD5": "26ca052ccc94acbaf19c03678f662137",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/forge/1.21.1-52.1.8/forge-1.21.1-52.1.8-universal.jar"
           },
           "subModules": [
             {
-              "id": "1.20.1-47.4.9",
+              "id": "1.21.1-52.1.8",
               "name": "Minecraft Forge (version.json)",
               "type": "VersionManifest",
               "artifact": {
-                "size": 16542,
-                "MD5": "589462e8f1c0c9a37b2e802a7f7ac590",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/versions/1.20.1-forge-47.4.9/1.20.1-forge-47.4.9.json"
+                "size": 24638,
+                "MD5": "412c451af06320133c1e66c475eeea25",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/versions/1.21.1-forge-52.1.8/1.21.1-forge-52.1.8.json"
               }
             },
             {
-              "id": "net.minecraftforge:fmlcore:1.20.1-47.4.9",
+              "id": "net.minecraftforge:forge:1.21.1-52.1.8:client",
+              "name": "Minecraft Forge (client jar)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 28055187,
+                "MD5": "e58b42ad1784832cba165ed9c2841c91",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/forge/1.21.1-52.1.8/forge-1.21.1-52.1.8-client.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.21.1-52.1.8:shim",
+              "name": "Minecraft Forge (client shim)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 15575,
+                "MD5": "7ad6c2ecee2485ed65393a2440423501",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/forge/1.21.1-52.1.8/forge-1.21.1-52.1.8-shim.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:fmlcore:1.21.1-52.1.8",
               "name": "Minecraft Forge (fmlcore)",
               "type": "Library",
               "classpath": true,
               "artifact": {
-                "size": 118912,
-                "MD5": "09083e00d2530c4065f9e59e04a74fd1",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/fmlcore/1.20.1-47.4.9/fmlcore-1.20.1-47.4.9.jar"
+                "size": 122624,
+                "MD5": "b889ce85c1c6c916d0d2d0a4c8eb672b",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/fmlcore/1.21.1-52.1.8/fmlcore-1.21.1-52.1.8.jar"
               },
               "subModules": []
             },
             {
-              "id": "net.minecraftforge:javafmllanguage:1.20.1-47.4.9",
+              "id": "net.minecraftforge:javafmllanguage:1.21.1-52.1.8",
               "name": "Minecraft Forge (javafmllanguage)",
               "type": "Library",
               "classpath": true,
               "artifact": {
-                "size": 16854,
-                "MD5": "6913d7a3219e9b935c31be5db456669b",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/javafmllanguage/1.20.1-47.4.9/javafmllanguage-1.20.1-47.4.9.jar"
+                "size": 19237,
+                "MD5": "2417c1285d2f2de42d054efb498e597a",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/javafmllanguage/1.21.1-52.1.8/javafmllanguage-1.21.1-52.1.8.jar"
               },
               "subModules": []
             },
             {
-              "id": "net.minecraftforge:mclanguage:1.20.1-47.4.9",
+              "id": "net.minecraftforge:mclanguage:1.21.1-52.1.8",
               "name": "Minecraft Forge (mclanguage)",
               "type": "Library",
               "classpath": true,
               "artifact": {
-                "size": 4997,
-                "MD5": "ab13c76fe2b3aef975591d4d66ce4dcf",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/mclanguage/1.20.1-47.4.9/mclanguage-1.20.1-47.4.9.jar"
+                "size": 4921,
+                "MD5": "24ea91b586b8eb17bc0264e0bf913d98",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/mclanguage/1.21.1-52.1.8/mclanguage-1.21.1-52.1.8.jar"
               },
               "subModules": []
             },
             {
-              "id": "net.minecraftforge:forge:1.20.1-47.4.9:universal",
-              "name": "Minecraft Forge (universal jar)",
+              "id": "net.minecraftforge:lowcodelanguage:1.21.1-52.1.8",
+              "name": "Minecraft Forge (lowcodelanguage)",
               "type": "Library",
-              "classpath": false,
+              "classpath": true,
               "artifact": {
-                "size": 2777624,
-                "MD5": "ad2715523994b69479d592500e7a855b",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/forge/1.20.1-47.4.9/forge-1.20.1-47.4.9-universal.jar"
+                "size": 7182,
+                "MD5": "7ba16a2d235a28bfb91d1ac38014c17e",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/lowcodelanguage/1.21.1-52.1.8/lowcodelanguage-1.21.1-52.1.8.jar"
               },
               "subModules": []
             },
             {
-              "id": "net.minecraftforge:forge:1.20.1-47.4.9:client",
-              "name": "Minecraft Forge (client jar)",
+              "id": "net.minecraftforge:forge:1.21.1-52.1.8:universal",
+              "name": "Minecraft Forge (forge)",
               "type": "Library",
-              "classpath": false,
               "artifact": {
-                "size": 4847974,
-                "MD5": "120cd44e8206f7329b9f8b6a1bc3fc51",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/forge/1.20.1-47.4.9/forge-1.20.1-47.4.9-client.jar"
-              },
-              "subModules": []
+                "size": 2961395,
+                "MD5": "26ca052ccc94acbaf19c03678f662137",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/forge/1.21.1-52.1.8/forge-1.21.1-52.1.8-universal.jar"
+              }
             },
             {
-              "id": "net.minecraft:client:1.20.1-20230612.114412:srg",
-              "name": "Minecraft Forge (client srg)",
+              "id": "net.minecraftforge:JarJarFileSystems:0.3.26",
+              "name": "Minecraft Forge (JarJarFileSystems)",
               "type": "Library",
-              "classpath": false,
               "artifact": {
-                "size": 18842082,
-                "MD5": "8bfacfba4f54cda741019756165c5ecf",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar"
-              },
-              "subModules": []
+                "size": 33588,
+                "MD5": "8352942e72eeb89fcbac32a48f63051b",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.26/JarJarFileSystems-0.3.26.jar"
+              }
             },
             {
-              "id": "net.minecraft:client:1.20.1-20230612.114412:slim",
-              "name": "Minecraft Forge (client slim)",
+              "id": "com.google.guava:guava:32.1.2-jre",
+              "name": "Minecraft Forge (guava)",
               "type": "Library",
-              "classpath": false,
               "artifact": {
-                "size": 12592249,
-                "MD5": "28edebec7b5a007bc9961ee9bab4d764",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-slim.jar"
-              },
-              "subModules": []
+                "size": 3041591,
+                "MD5": "5fe031b3b35ed56182478811a931d617",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar"
+              }
             },
             {
-              "id": "net.minecraft:client:1.20.1-20230612.114412:extra",
-              "name": "Minecraft Forge (client extra)",
+              "id": "com.google.guava:failureaccess:1.0.1",
+              "name": "Minecraft Forge (failureaccess)",
               "type": "Library",
-              "classpath": false,
               "artifact": {
-                "size": 10436626,
-                "MD5": "da6bb1a2c23108392fd6c103da40867c",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-extra.jar"
-              },
-              "subModules": []
+                "size": 4617,
+                "MD5": "091883993ef5bfa91da01dcc8fc52236",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
+              }
             },
             {
-              "id": "cpw.mods:securejarhandler:2.1.10",
-              "name": "Minecraft Forge (securejarhandler)",
+              "id": "net.minecraftforge:securemodules:2.2.21",
+              "name": "Minecraft Forge (securemodules)",
               "type": "Library",
               "artifact": {
-                "size": 88749,
-                "MD5": "d9ff48d1c68388270388b803fa42611e",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar"
+                "size": 99261,
+                "MD5": "5d397ffe3f80e51f97396f4c84b14da7",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/securemodules/2.2.21/securemodules-2.2.21.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:unsafe:0.9.2",
+              "name": "Minecraft Forge (unsafe)",
+              "type": "Library",
+              "artifact": {
+                "size": 7768,
+                "MD5": "a4b1f17fbeea6b548c3530451e45c5c6",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/unsafe/0.9.2/unsafe-0.9.2.jar"
               }
             },
             {
@@ -158,16 +199,6 @@
                 "size": 126113,
                 "MD5": "f5adf3bfc54fb3d2cd8e3a1f275084bc",
                 "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/ow2/asm/asm/9.8/asm-9.8.jar"
-              }
-            },
-            {
-              "id": "org.ow2.asm:asm-commons:9.8",
-              "name": "Minecraft Forge (asm-commons)",
-              "type": "Library",
-              "artifact": {
-                "size": 73498,
-                "MD5": "c8c3d9ccf240144e74d94ff658b024c9",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar"
               }
             },
             {
@@ -191,6 +222,16 @@
               }
             },
             {
+              "id": "org.ow2.asm:asm-commons:9.8",
+              "name": "Minecraft Forge (asm-commons)",
+              "type": "Library",
+              "artifact": {
+                "size": 73498,
+                "MD5": "c8c3d9ccf240144e74d94ff658b024c9",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar"
+              }
+            },
+            {
               "id": "org.ow2.asm:asm-analysis:9.8",
               "name": "Minecraft Forge (asm-analysis)",
               "type": "Library",
@@ -201,113 +242,153 @@
               }
             },
             {
-              "id": "net.minecraftforge:accesstransformers:8.0.4",
-              "name": "Minecraft Forge (accesstransformers)",
+              "id": "de.oceanlabs.mcp:mcp_config:1.21.1-20240808.132146:srg2off",
+              "name": "Minecraft Forge (mcp_config)",
               "type": "Library",
               "artifact": {
-                "size": 77756,
-                "MD5": "f0d3533f9437ba4428eaee9f28f7ecd9",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/accesstransformers/8.0.4/accesstransformers-8.0.4.jar"
+                "size": 567256,
+                "MD5": "00180d60ba19e995dba8aefab5365159",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/de/oceanlabs/mcp/mcp_config/1.21.1-20240808.132146/mcp_config-1.21.1-20240808.132146-srg2off.jar"
               }
             },
             {
-              "id": "org.antlr:antlr4-runtime:4.9.1",
-              "name": "Minecraft Forge (antlr4-runtime)",
+              "id": "net.minecraftforge:JarJarFileSystems:0.3.26",
+              "name": "Minecraft Forge (JarJarFileSystems)",
               "type": "Library",
               "artifact": {
-                "size": 337868,
-                "MD5": "0dcc4b860d5d8d2852ab94d58c56ca2d",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar"
+                "size": 33588,
+                "MD5": "8352942e72eeb89fcbac32a48f63051b",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.26/JarJarFileSystems-0.3.26.jar"
               }
             },
             {
-              "id": "net.minecraftforge:eventbus:6.0.5",
-              "name": "Minecraft Forge (eventbus)",
+              "id": "com.google.guava:guava:32.1.2-jre",
+              "name": "Minecraft Forge (guava)",
               "type": "Library",
               "artifact": {
-                "size": 53985,
-                "MD5": "2a6245210b446b2144071e71ca13432b",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/eventbus/6.0.5/eventbus-6.0.5.jar"
+                "size": 3041591,
+                "MD5": "5fe031b3b35ed56182478811a931d617",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar"
               }
             },
             {
-              "id": "net.minecraftforge:forgespi:7.0.1",
-              "name": "Minecraft Forge (forgespi)",
+              "id": "com.google.guava:failureaccess:1.0.1",
+              "name": "Minecraft Forge (failureaccess)",
               "type": "Library",
               "artifact": {
-                "size": 29831,
-                "MD5": "bd34d20287dc95201fe9475a8bbc2540",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/forgespi/7.0.1/forgespi-7.0.1.jar"
+                "size": 4617,
+                "MD5": "091883993ef5bfa91da01dcc8fc52236",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
               }
             },
             {
-              "id": "net.minecraftforge:coremods:5.2.4",
-              "name": "Minecraft Forge (coremods)",
+              "id": "net.minecraftforge:securemodules:2.2.21",
+              "name": "Minecraft Forge (securemodules)",
               "type": "Library",
               "artifact": {
-                "size": 31872,
-                "MD5": "5295505357ba9b98450c5e3121f82191",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/coremods/5.2.4/coremods-5.2.4.jar"
+                "size": 99261,
+                "MD5": "5d397ffe3f80e51f97396f4c84b14da7",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/securemodules/2.2.21/securemodules-2.2.21.jar"
               }
             },
             {
-              "id": "cpw.mods:modlauncher:10.0.9",
-              "name": "Minecraft Forge (modlauncher)",
-              "type": "Library",
-              "artifact": {
-                "size": 130343,
-                "MD5": "07507d18d72661f8ae6a5da75bbf35be",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/cpw/mods/modlauncher/10.0.9/modlauncher-10.0.9.jar"
-              }
-            },
-            {
-              "id": "net.minecraftforge:unsafe:0.2.0",
+              "id": "net.minecraftforge:unsafe:0.9.2",
               "name": "Minecraft Forge (unsafe)",
               "type": "Library",
               "artifact": {
-                "size": 2834,
-                "MD5": "2d1016ebe4c1a63dd50a59d26bd12db1",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar"
+                "size": 7768,
+                "MD5": "a4b1f17fbeea6b548c3530451e45c5c6",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/unsafe/0.9.2/unsafe-0.9.2.jar"
               }
             },
             {
-              "id": "net.minecraftforge:mergetool:1.1.5:api",
-              "name": "Minecraft Forge (mergetool)",
+              "id": "org.ow2.asm:asm:9.8",
+              "name": "Minecraft Forge (asm)",
               "type": "Library",
               "artifact": {
-                "size": 2572,
-                "MD5": "8df9c5bf87d004ddb884eca99bc2a4b1",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/mergetool/1.1.5/mergetool-1.1.5-api.jar"
+                "size": 126113,
+                "MD5": "f5adf3bfc54fb3d2cd8e3a1f275084bc",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/ow2/asm/asm/9.8/asm-9.8.jar"
               }
             },
             {
-              "id": "com.electronwill.night-config:core:3.6.4",
-              "name": "Minecraft Forge (core)",
+              "id": "org.ow2.asm:asm-tree:9.8",
+              "name": "Minecraft Forge (asm-tree)",
               "type": "Library",
               "artifact": {
-                "size": 199834,
-                "MD5": "d83ab07267e402131fb93d899a57f5cd",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar"
+                "size": 51934,
+                "MD5": "4ab1aaec43c77a2d9b56e6d6d496f705",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar"
               }
             },
             {
-              "id": "com.electronwill.night-config:toml:3.6.4",
-              "name": "Minecraft Forge (toml)",
+              "id": "org.ow2.asm:asm-util:9.8",
+              "name": "Minecraft Forge (asm-util)",
               "type": "Library",
               "artifact": {
-                "size": 31816,
-                "MD5": "bc95d0709fff2164b01fd09fbc988be8",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/com/electronwill/night-config/toml/3.6.4/toml-3.6.4.jar"
+                "size": 94559,
+                "MD5": "62498ef324bdab15f407d703f7d78d19",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar"
               }
             },
             {
-              "id": "org.apache.maven:maven-artifact:3.8.5",
-              "name": "Minecraft Forge (maven-artifact)",
+              "id": "org.ow2.asm:asm-commons:9.8",
+              "name": "Minecraft Forge (asm-commons)",
               "type": "Library",
               "artifact": {
-                "size": 58077,
-                "MD5": "ce473b0d9fbfd10fe147f03fe8707d67",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
+                "size": 73498,
+                "MD5": "c8c3d9ccf240144e74d94ff658b024c9",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.8",
+              "name": "Minecraft Forge (asm-analysis)",
+              "type": "Library",
+              "artifact": {
+                "size": 35151,
+                "MD5": "3d63508405f5610fc2ea673ff5471553",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:bootstrap:2.1.8",
+              "name": "Minecraft Forge (bootstrap)",
+              "type": "Library",
+              "artifact": {
+                "size": 11124,
+                "MD5": "5e88694e0e5f6656830eee83d462550e",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/bootstrap/2.1.8/bootstrap-2.1.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:bootstrap-api:2.1.8",
+              "name": "Minecraft Forge (bootstrap-api)",
+              "type": "Library",
+              "artifact": {
+                "size": 2059,
+                "MD5": "80e1ccc33e0ac0a995a352ec2977d131",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/bootstrap-api/2.1.8/bootstrap-api-2.1.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:accesstransformers:8.2.2",
+              "name": "Minecraft Forge (accesstransformers)",
+              "type": "Library",
+              "artifact": {
+                "size": 39770,
+                "MD5": "6b5637f836fa17705880c58980494d30",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/accesstransformers/8.2.2/accesstransformers-8.2.2.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:eventbus:6.2.27",
+              "name": "Minecraft Forge (eventbus)",
+              "type": "Library",
+              "artifact": {
+                "size": 58819,
+                "MD5": "75bc70f98b84a9778165e83e39f26d24",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/eventbus/6.2.27/eventbus-6.2.27.jar"
               }
             },
             {
@@ -321,43 +402,23 @@
               }
             },
             {
-              "id": "net.minecrell:terminalconsoleappender:1.2.0",
-              "name": "Minecraft Forge (terminalconsoleappender)",
+              "id": "net.minecraftforge:forgespi:7.1.5",
+              "name": "Minecraft Forge (forgespi)",
               "type": "Library",
               "artifact": {
-                "size": 15977,
-                "MD5": "679363fa893293791e55a21f81342f87",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar"
+                "size": 31098,
+                "MD5": "bca6569294ec2817051f915ea171c3ea",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/forgespi/7.1.5/forgespi-7.1.5.jar"
               }
             },
             {
-              "id": "org.jline:jline-reader:3.12.1",
-              "name": "Minecraft Forge (jline-reader)",
+              "id": "net.minecraftforge:coremods:5.2.6",
+              "name": "Minecraft Forge (coremods)",
               "type": "Library",
               "artifact": {
-                "size": 150765,
-                "MD5": "a2e7b012cd9802f83321187409174a94",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/jline/jline-reader/3.12.1/jline-reader-3.12.1.jar"
-              }
-            },
-            {
-              "id": "org.jline:jline-terminal:3.12.1",
-              "name": "Minecraft Forge (jline-terminal)",
-              "type": "Library",
-              "artifact": {
-                "size": 211712,
-                "MD5": "3c52be5ab5e3847be6e62269de924cb0",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/jline/jline-terminal/3.12.1/jline-terminal-3.12.1.jar"
-              }
-            },
-            {
-              "id": "org.spongepowered:mixin:0.8.5",
-              "name": "Minecraft Forge (mixin)",
-              "type": "Library",
-              "artifact": {
-                "size": 1089277,
-                "MD5": "19b3a2ae9e445a6e626fd7d1648cfcb8",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+                "size": 31941,
+                "MD5": "998accaddc7f9a050e982a0c0a90ac4e",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/coremods/5.2.6/coremods-5.2.6.jar"
               }
             },
             {
@@ -371,901 +432,286 @@
               }
             },
             {
-              "id": "net.minecraftforge:JarJarSelector:0.3.19",
+              "id": "net.minecraftforge:modlauncher:10.2.4",
+              "name": "Minecraft Forge (modlauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 129138,
+                "MD5": "0c1f1d647daf381e4b80265dd85640de",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/modlauncher/10.2.4/modlauncher-10.2.4.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:mergetool-api:1.0",
+              "name": "Minecraft Forge (mergetool-api)",
+              "type": "Library",
+              "artifact": {
+                "size": 2624,
+                "MD5": "848efa1631b460b715de574b2beaba8e",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/mergetool-api/1.0/mergetool-api-1.0.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:toml:3.7.4",
+              "name": "Minecraft Forge (toml)",
+              "type": "Library",
+              "artifact": {
+                "size": 39542,
+                "MD5": "90e668945d6a9f65956267f6698496a1",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/com/electronwill/night-config/toml/3.7.4/toml-3.7.4.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:core:3.7.4",
+              "name": "Minecraft Forge (core)",
+              "type": "Library",
+              "artifact": {
+                "size": 360099,
+                "MD5": "91f883024d3fda9862f93d9ffbb83c0b",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/com/electronwill/night-config/core/3.7.4/core-3.7.4.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.8.8",
+              "name": "Minecraft Forge (maven-artifact)",
+              "type": "Library",
+              "artifact": {
+                "size": 58097,
+                "MD5": "62c96f80b30e8a0c3e706bc0a27b4384",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/apache/maven/maven-artifact/3.8.8/maven-artifact-3.8.8.jar"
+              }
+            },
+            {
+              "id": "net.minecrell:terminalconsoleappender:1.2.0",
+              "name": "Minecraft Forge (terminalconsoleappender)",
+              "type": "Library",
+              "artifact": {
+                "size": 15977,
+                "MD5": "679363fa893293791e55a21f81342f87",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-reader:3.25.1",
+              "name": "Minecraft Forge (jline-reader)",
+              "type": "Library",
+              "artifact": {
+                "size": 183668,
+                "MD5": "e0761241f55f4f1a46999f57c7a419a1",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/jline/jline-reader/3.25.1/jline-reader-3.25.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.25.1",
+              "name": "Minecraft Forge (jline-terminal)",
+              "type": "Library",
+              "artifact": {
+                "size": 261895,
+                "MD5": "6e319770f036ccab1928b8de68a62ca5",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/jline/jline-terminal/3.25.1/jline-terminal-3.25.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal-jna:3.25.1",
+              "name": "Minecraft Forge (jline-terminal-jna)",
+              "type": "Library",
+              "artifact": {
+                "size": 73759,
+                "MD5": "a9b17e3a4bc39309cbc1243e81400615",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/jline/jline-terminal-jna/3.25.1/jline-terminal-jna-3.25.1.jar"
+              }
+            },
+            {
+              "id": "org.spongepowered:mixin:0.8.7",
+              "name": "Minecraft Forge (mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1134454,
+                "MD5": "b433b4dfbad09313e143c6097cd0b676",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/org/spongepowered/mixin/0.8.7/mixin-0.8.7.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarSelector:0.3.26",
               "name": "Minecraft Forge (JarJarSelector)",
               "type": "Library",
               "artifact": {
-                "size": 17374,
-                "MD5": "2bb6cbe0e6c6fbcd8f92d2e6b1ea678e",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/JarJarSelector/0.3.19/JarJarSelector-0.3.19.jar"
+                "size": 17346,
+                "MD5": "0bbcf01b4a6d9d8edc3ea6dbf82230d4",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/JarJarSelector/0.3.26/JarJarSelector-0.3.26.jar"
               }
             },
             {
-              "id": "net.minecraftforge:JarJarMetadata:0.3.19",
+              "id": "net.minecraftforge:JarJarMetadata:0.3.26",
               "name": "Minecraft Forge (JarJarMetadata)",
               "type": "Library",
               "artifact": {
-                "size": 15895,
-                "MD5": "9633546d299d4282ca68d10582be1c8f",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/JarJarMetadata/0.3.19/JarJarMetadata-0.3.19.jar"
+                "size": 15863,
+                "MD5": "3951751f2e680c0fd43742b33fbe4131",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/JarJarMetadata/0.3.26/JarJarMetadata-0.3.26.jar"
               }
             },
             {
-              "id": "cpw.mods:bootstraplauncher:1.1.2",
-              "name": "Minecraft Forge (bootstraplauncher)",
+              "id": "net.minecraftforge:fmlcore:1.21.1-52.1.8",
+              "name": "Minecraft Forge (fmlcore)",
               "type": "Library",
               "artifact": {
-                "size": 8284,
-                "MD5": "48f5255aa337344c467c0150d347813d",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar"
+                "size": 122624,
+                "MD5": "b889ce85c1c6c916d0d2d0a4c8eb672b",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/fmlcore/1.21.1-52.1.8/fmlcore-1.21.1-52.1.8.jar"
               }
             },
             {
-              "id": "net.minecraftforge:JarJarFileSystems:0.3.19",
-              "name": "Minecraft Forge (JarJarFileSystems)",
-              "type": "Library",
-              "artifact": {
-                "size": 32195,
-                "MD5": "c2be1a88b63eb1b58b00ab6e498cd97d",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar"
-              }
-            },
-            {
-              "id": "net.minecraftforge:fmlloader:1.20.1-47.4.9",
+              "id": "net.minecraftforge:fmlloader:1.21.1-52.1.8",
               "name": "Minecraft Forge (fmlloader)",
               "type": "Library",
               "artifact": {
-                "size": 267077,
-                "MD5": "1fb6a0c2a73c6154b29d8868a32c4d39",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/fmlloader/1.20.1-47.4.9/fmlloader-1.20.1-47.4.9.jar"
+                "size": 247291,
+                "MD5": "3d9cdde466cfb59793b6a386e4f4f959",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/fmlloader/1.21.1-52.1.8/fmlloader-1.21.1-52.1.8.jar"
               }
             },
             {
-              "id": "net.minecraftforge:fmlearlydisplay:1.20.1-47.4.9",
+              "id": "net.minecraftforge:fmlearlydisplay:1.21.1-52.1.8",
               "name": "Minecraft Forge (fmlearlydisplay)",
               "type": "Library",
               "artifact": {
-                "size": 170517,
-                "MD5": "18a2acd7d3dd0c02415120c79a106039",
-                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/fmlearlydisplay/1.20.1-47.4.9/fmlearlydisplay-1.20.1-47.4.9.jar"
+                "size": 170276,
+                "MD5": "a9e0dd162c7ced70aac54e74dc836d7d",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/fmlearlydisplay/1.21.1-52.1.8/fmlearlydisplay-1.21.1-52.1.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:javafmllanguage:1.21.1-52.1.8",
+              "name": "Minecraft Forge (javafmllanguage)",
+              "type": "Library",
+              "artifact": {
+                "size": 19237,
+                "MD5": "2417c1285d2f2de42d054efb498e597a",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/javafmllanguage/1.21.1-52.1.8/javafmllanguage-1.21.1-52.1.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:lowcodelanguage:1.21.1-52.1.8",
+              "name": "Minecraft Forge (lowcodelanguage)",
+              "type": "Library",
+              "artifact": {
+                "size": 7182,
+                "MD5": "7ba16a2d235a28bfb91d1ac38014c17e",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/lowcodelanguage/1.21.1-52.1.8/lowcodelanguage-1.21.1-52.1.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:mclanguage:1.21.1-52.1.8",
+              "name": "Minecraft Forge (mclanguage)",
+              "type": "Library",
+              "artifact": {
+                "size": 4921,
+                "MD5": "24ea91b586b8eb17bc0264e0bf913d98",
+                "url": "https://github.com/mchdistro/naru_o3o/raw/main/repo/lib/net/minecraftforge/mclanguage/1.21.1-52.1.8/mclanguage-1.21.1-52.1.8.jar"
               }
             }
           ]
         },
         {
-          "id": "squeek.appleskin:appleskin:2.5.1+mc1.20.1@jar",
-          "name": "AppleSkin",
+          "id": "lol.bai.badpackets.impl:badpackets:0.8.2@jar",
+          "name": "Bad Packets",
           "type": "ForgeMod",
           "artifact": {
-            "size": 47428,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/appleskin-forge-mc1.20.1-2.5.1.jar",
-            "MD5": "dae63cea9c951dda542a4005ceef3953"
-          },
-          "required": {
-            "value": false
+            "size": 213685,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/forgemods/required/badpackets-forge-0.8.2.jar",
+            "MD5": "29b61f0d029a5d8e841188aac864dddf"
           }
         },
         {
-          "id": "it.mralxart.arcaneabilities:arcane_abilities:0.3.0@jar",
-          "name": "ArcaneAbilities",
+          "id": "dzwdz.chat_heads:chat_heads:0.14.2@jar",
+          "name": "Chat Heads",
           "type": "ForgeMod",
           "artifact": {
-            "size": 751339,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/arcane_abilities-0.3.0.jar",
-            "MD5": "a36d5abd3e358e70780949262e3ef485"
-          },
-          "required": {
-            "value": false
+            "size": 713605,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/forgemods/required/chat_heads-0.14.2-forge-1.21.jar",
+            "MD5": "43ab967deda2be54f2876ba101900156"
           }
         },
         {
-          "id": "dev.architectury:architectury:9.2.14@jar",
-          "name": "Architectury",
+          "id": "com.blamejared:clumps:19.0.0.1@jar",
+          "name": "Clumps",
           "type": "ForgeMod",
           "artifact": {
-            "size": 580602,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/architectury-9.2.14-forge.jar",
-            "MD5": "76b40d407b6bf0257dd1dab6d3d395d5"
-          },
-          "required": {
-            "value": false
+            "size": 18226,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/forgemods/required/Clumps-forge-1.21.1-19.0.0.1.jar",
+            "MD5": "89af68d71d1818b476730de54915ef78"
           }
         },
         {
-          "id": "artifacts:artifacts:9.5.16@jar",
-          "name": "Artifacts",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 850457,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/artifacts-forge-9.5.16.jar",
-            "MD5": "85081468e7498005f5dfdab2ae520097"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "mod.azure:azurelib:3.1.1@jar",
-          "name": "AzureLib",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1049802,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/azurelib-neo-1.20.1-3.1.1.jar",
-            "MD5": "5c6413047614b6ca5845aa3aeea9ad56"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "forge.me.thosea:badoptimizations:2.3.1@jar",
-          "name": "BadOptimizations",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 452475,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/BadOptimizations-2.3.1-1.20.1.jar",
-            "MD5": "1c89fecc5ed73e722b24cba5cb42399c"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.blay09.mods:balm:7.3.37@jar",
-          "name": "Balm",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 590487,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/balm-forge-1.20.1-7.3.37-all.jar",
-            "MD5": "d1a4f41280905b9268dd517e403b2160"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.bettercombat:bettercombat:1.8.6+1.20.1@jar",
-          "name": "Better Combat",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1050118,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/bettercombat-forge-1.8.6+1.20.1.jar",
-            "MD5": "28f4682af86e8bdee7b808fa0adbdf81"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "me.treyruffy:betterf3:7.0.2@jar",
-          "name": "BetterF3",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 468517,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/BetterF3-7.0.2-Forge-1.20.1.jar",
-            "MD5": "7411ae023390cf6b148f05a6b685279f"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "biomesoplenty.forge.core:biomesoplenty:19.0.0.96@jar",
-          "name": "Biomes O' Plenty",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 22381010,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/BiomesOPlenty-forge-1.20.1-19.0.0.96.jar",
-            "MD5": "1b20a91a2b013ccad6cd56279a459b12"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.darkhax:bookshelf:20.2.13@jar",
-          "name": "Bookshelf",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 343962,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Bookshelf-Forge-1.20.1-20.2.13.jar",
-            "MD5": "46c8e7f9bcfa984bd576e448df2beb25"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "cech12.bucketlib:bucketlib:1.20.1-2.3.7.1@jar",
-          "name": "BucketLib",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 153080,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/bucketlib-1.20.1-2.3.7.1.jar",
-            "MD5": "321e796e36b2070e28148ef2cb5a08ed"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "top.theillusivec4:caelus:3.2.0+1.20.1@jar",
-          "name": "Caelus API",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 40125,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/caelus-forge-3.2.0+1.20.1.jar",
-            "MD5": "ac909c99a2a96ead2073f98bf0dd7b78"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.acetheeldritchking:cataclysm_spellbooks:1.2.7-1.20.1@jar",
-          "name": "Cataclysm: Spellbooks",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1261502,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/cataclysm_spellbooks-1.2.7-1.20.1-all.jar",
-            "MD5": "41e6ce08b64d5063e56b4584541fdc7f"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "me.shedaniel.clothconfig:cloth_config:11.1.136@jar",
-          "name": "Cloth Config v10 API",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1181413,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/cloth-config-11.1.136-forge.jar",
-            "MD5": "ca5de5acbcb4a30c010aa6953bd7ef53"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.blamejared:controlling:12.0.2@jar",
-          "name": "Controlling",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 115280,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Controlling-forge-1.20.1-12.0.2.jar",
-            "MD5": "dc94fc03e516d96aad393b26910c81ad"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "top.theillusivec4:curios:5.14.1+1.20.1@jar",
-          "name": "Curios API",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 398066,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/curios-forge-5.14.1+1.20.1.jar",
-            "MD5": "2fdcc97cbc66c4b2492b407c792e7159"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.lostluma.dynamic_fps.impl:dynamic_fps:3.9.5@jar",
-          "name": "Dynamic FPS",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 376061,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/dynamic-fps-3.9.5+minecraft-1.20.0-forge.jar",
-            "MD5": "16fcbe43302a38eca0777931387ab865"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "fzzyhmstrs.emi_loot:emi_loot:0.7.6+1.20.1+forge@jar",
-          "name": "EMI Loot",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 414381,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/emi_loot-0.7.6+1.20.1+forge.jar",
-            "MD5": "e74052f7bca32958e084e74fc1c89b68"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "dev.emi.emi.platform:emi:1.1.22+1.20.1+forge@jar",
-          "name": "EMI",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1048567,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/emi-1.1.22+1.20.1+forge.jar",
-            "MD5": "441c582c6e8a1d6fd9e3d16a27c1a39e"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.teamremastered:endrem:5.3.3-R-1.20.1@jar",
-          "name": "End Remastered",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 889634,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/endrem_forge-5.3.3-R-1.20.1.jar",
-            "MD5": "1de1aa97b353be8fe243f3a60cfc902e"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "traben.entity_model_features:entity_model_features:3.0.1@jar",
-          "name": "Entity Model Features",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 657484,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/entity_model_features_1.20.1-forge-3.0.1.jar",
-            "MD5": "9389de85f96d0a97953c74faab9c4d60"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "traben.entity_texture_features:entity_texture_features:7.0.2@jar",
-          "name": "Entity Texture Features",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 894117,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/entity_texture_features_1.20.1-forge-7.0.2.jar",
-            "MD5": "1b13a36cd9ba7686d997a99001226373"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "dev.tr7zw:entityculling:1.9.2@jar",
-          "name": "EntityCulling",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 477372,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/entityculling-forge-1.9.2-mc1.20.1.jar",
-            "MD5": "e756916c39c6cae945c321c3bb2ab0f9"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "malte0811.ferritecore:ferritecore:6.0.1@jar",
-          "name": "Ferrite Core",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 123034,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/ferritecore-6.0.1-forge.jar",
-            "MD5": "f52f538207a4829d7060550092ce2383"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.faboslav:friendsandfoes:3.0.9@jar",
-          "name": "Friends&Foes",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 3622128,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/friendsandfoes-forge-mc1.20.1-3.0.9.jar",
-            "MD5": "d85705f9ccc062d77f1204f86aff8e1d"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "mod.alexndr:fusion:1.20.1-6.0.0.3@jar",
-          "name": "SimpleOres:Fusion",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 496254,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Fusion-1.20.1-6.0.0.3.jar",
-            "MD5": "196e8f5379a5920536882c10b38bf5e4"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "me.fzzyhmstrs:fzzy_config:0.7.3+1.20.1+forge@jar",
-          "name": "Fzzy Config",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 2312969,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/fzzy_config-0.7.3+1.20.1+forge.jar",
-            "MD5": "bcbfb7e94f16a15ad5d13fb4999a5b78"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "software.bernie.example:geckolib:4.8.2@jar",
-          "name": "GeckoLib 4",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1038979,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/geckolib-forge-1.20.1-4.8.2.jar",
-            "MD5": "d1ff73da16b6fc163d6c5ed3d9734dde"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "glitchcore:glitchcore:0.0.1.1@jar",
-          "name": "GlitchCore",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 87551,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/GlitchCore-forge-1.20.1-0.0.1.1.jar",
-            "MD5": "87d2b7104f4069d44741f58ebe1bb2bd"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.raphimc:immediatelyfast:1.5.2+1.20.4@jar",
-          "name": "ImmediatelyFast",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 425140,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionaloff/ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
-            "MD5": "a9497bda5f3fd160c248d4a8d4499e15"
-          },
-          "required": {
-            "value": false,
-            "def": false
-          }
-        },
-        {
-          "id": "org.anti_ad.mc.ipnext:inventoryprofilesnext:1.10.19@jar",
+          "id": "org.anti_ad.mc.ipnext:inventoryprofilesnext:2.2.3@jar",
           "name": "Inventory Profiles Next",
           "type": "ForgeMod",
           "artifact": {
-            "size": 1456863,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/InventoryProfilesNext-forge-1.20-1.10.19.jar",
-            "MD5": "eafdba0041b0811e9e7afda28a5927fe"
-          },
-          "required": {
-            "value": false
+            "size": 1279299,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/forgemods/required/InventoryProfilesNext-forge-1.21.1-2.2.3.jar",
+            "MD5": "d6565df301a894eec7159c1355c071c4"
           }
         },
         {
-          "id": "io.redspace.ironsspellbooks:irons_spellbooks:1.20.1-3.4.0.9@jar",
-          "name": "Iron's Spells 'n Spellbooks",
+          "id": "mezz.jei:jei:19.27.0.336@jar",
+          "name": "Just Enough Items",
           "type": "ForgeMod",
           "artifact": {
-            "size": 8838604,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/irons_spellbooks-1.20.1-3.4.0.9.jar",
-            "MD5": "ffc9267a2ef52074ae1489b5b0ad06c5"
-          },
-          "required": {
-            "value": false
+            "size": 1529203,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/forgemods/required/jei-1.21.1-forge-19.27.0.336.jar",
+            "MD5": "6c12eade52a6396aff2eb0e2ccca94f4"
           }
         },
         {
-          "id": "snownee.jade:jade:11.13.2+forge@jar",
-          "name": "Jade",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 552486,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Jade-1.20.1-Forge-11.13.2.jar",
-            "MD5": "7c349670f77fd64b9e9854c4a8d82fcc"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.hyfata.najoan.koreanpatch.client:koreanpatch:1.9.0+mc1.20.1@jar",
-          "name": "Korean Patch",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 315488,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/koreanpatch-forge-1.9.0+mc1.20.1.jar",
-            "MD5": "dc6a73dcbec683185bd2e3c87ad8fb17"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "generated.forgemod:kotlinforforge:4.11.0-all@jar",
+          "id": "generated.forgemod:kotlinforforge:5.10.0-all@jar",
           "name": "Kotlinforforge",
           "type": "ForgeMod",
           "artifact": {
-            "size": 7193768,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/kotlinforforge-4.11.0-all.jar",
-            "MD5": "417caa90d17dc86cf7d24b802c2a5c56"
-          },
-          "required": {
-            "value": false
+            "size": 6730194,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/forgemods/required/kotlinforforge-5.10.0-all.jar",
+            "MD5": "0d0d14c17956ba4a042d47b75e0b6831"
           }
         },
         {
-          "id": "com.github.l_ender:cataclysm:3.16@jar",
-          "name": "Cataclysm",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 127993805,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/L_Enders_Cataclysm-3.16.jar",
-            "MD5": "de747fb259b761f7b872654516fa27b3"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "org.anti_ad.mc:libipn:4.0.2@jar",
+          "id": "org.anti_ad.mc:libipn:6.6.2@jar",
           "name": "LibIPN",
           "type": "ForgeMod",
           "artifact": {
-            "size": 693301,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/libIPN-forge-1.20-4.0.2.jar",
-            "MD5": "ef3a86f4867dba031dd6adef7e45d396"
-          },
-          "required": {
-            "value": false
+            "size": 624669,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/forgemods/required/libIPN-forge-1.21.1-6.6.2.jar",
+            "MD5": "a6cfe84453678249cf56b61203688b2b"
           }
         },
         {
-          "id": "com.github.l_ender:lionfishapi:2.4@jar",
-          "name": "LionfishAPI",
+          "id": "mcp.mobius:wthit:12.9.0@jar",
+          "name": "Wthit",
           "type": "ForgeMod",
           "artifact": {
-            "size": 165468,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/lionfishapi-2.4.jar",
-            "MD5": "53ec5280c6db0984f4bee51b7ebf5800"
-          },
-          "required": {
-            "value": false
+            "size": 851855,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/forgemods/required/wthit-1.21.1-forge-12.9.0.jar",
+            "MD5": "c73a4eb135c780544e6c8e0c5f8d1996"
           }
         },
         {
-          "id": "noobanidus.mods:lootr:0.7.35.92@jar",
-          "name": "Lootr",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 460882,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/lootr-forge-1.20-0.7.35.93.jar",
-            "MD5": "2d5374b809d9ec1d7700a194b2fd0dd5"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "org.embeddedt.modernfix.forge.init:modernfix:5.24.4+mc1.20.1@jar",
-          "name": "ModernFix",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 880557,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/modernfix-forge-5.24.4+mc1.20.1.jar",
-            "MD5": "1d729a283f14fdbf1021ff4f0c88b0ec"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.chaosthedude:naturescompass:1.20.1-1.11.2-forge@jar",
-          "name": "Nature's Compass",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 215119,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/NaturesCompass-1.20.1-1.11.2-forge.jar",
-            "MD5": "7c05072645b1aae529b1e38c74b87c4c"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.aizistral:nochatreports:1.20.1-v2.2.2@jar",
-          "name": "No Chat Reports",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 272740,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/NoChatReports-FORGE-1.20.1-v2.2.2.jar",
-            "MD5": "3153d1e860c6fefe6dac26efdb5c40c6"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "it.hurts.octostudios:octolib:0.5.0.1@jar",
-          "name": "OctoLib",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 424035,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
-            "MD5": "6b2fd012966b13a96ce4f68ae42eab8c"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.coderbot.iris:oculus:1.6.9@jar",
-          "name": "Oculus",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 2814481,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/oculus-mc1.20.1-1.6.9.jar",
-            "MD5": "dd3596e374db3975a2f83594da6a3e2b"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "dev.tonimatas:packetfixer:3.3.0@jar",
-          "name": "PacketFixer",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 190422,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/packetfixer-3.3.0-1.18-1.20.4-merged.jar",
-            "MD5": "75045a749fde88dc20972e34bb815f29"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "dev.kosmx.playeranim:playeranimator:1.0.2-rc1+1.20@jar",
-          "name": "Player Animator",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 181437,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
-            "MD5": "46f8554181d4d240075ea4919d01fd01"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "it.hurts.sskirillss:relics:0.8.0.11@jar",
-          "name": "Relics",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1518437,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/relics-1.20.1-0.8.0.11.jar",
-            "MD5": "450bc342776c6e63294453377c50dd1c"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.teamresourceful:resourcefullib:2.1.29@jar",
-          "name": "Resourceful Lib",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 432753,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/resourcefullib-forge-1.20.1-2.1.29.jar",
-            "MD5": "a040c6cc86f653fddf280ff3af9068f0"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "generated.forgemod:rrls:4.0.6.1+mc1.20.1-forge@jar",
-          "name": "Remove Reloading Screen",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 277896,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/rrls-4.0.6.1+mc1.20.1-forge.jar",
-            "MD5": "6ff0f56b3e745f8da8759cda0a70c236"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "me.jellysquid.mods.sodium.client:rubidium:0.7.1@jar",
-          "name": "Rubidium",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 704856,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/rubidium-mc1.20.1-0.7.1.jar",
-            "MD5": "5a6a9dbad21f4d67f967c6ce369ecb0e"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.blamejared:searchables:1.0.3@jar",
-          "name": "Searchables",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 77732,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Searchables-forge-1.20.1-1.0.3.jar",
-            "MD5": "68fb3fa702de7e10194c5b8a3d25b5b0"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "mod.alexndr:simplecorelib:1.20.1-6.0.1.2@jar",
-          "name": "SimpleCoreLib",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 175942,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/SimpleCoreLib-1.20.1-6.0.1.2.jar",
-            "MD5": "329da3e083f92e73d789a688c79b0cf4"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "mod.alexndr:simpleores:1.20.1-6.0.0.3@jar",
-          "name": "Simple Ores",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 497328,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/SimpleOres2-1.20.1-6.0.0.3.jar",
-            "MD5": "4517d98dc21da2895ad21cccb42056cf"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.p3pp3rf1y:sophisticatedbackpacks:3.24.10.1404@jar",
-          "name": "Sophisticated Backpacks",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 973179,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/sophisticatedbackpacks-1.20.1-3.24.10.1404.jar",
-            "MD5": "3763bdea2b948e7212962de174cc8422"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.p3pp3rf1y:sophisticatedcore:1.2.105.1230@jar",
-          "name": "Sophisticated Core",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1438972,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/sophisticatedcore-1.20.1-1.2.105.1230.jar",
-            "MD5": "daacf2e1f0d7971d939950fa1a298add"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "terrablender.core:terrablender:3.0.1.10@jar",
-          "name": "TerraBlender",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 107533,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/TerraBlender-forge-1.20.1-3.0.1.10.jar",
-            "MD5": "1f88ad1b2e0d196f0caf7c03a4abf893"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "toni.lib:txnilib:1.0.24@jar",
-          "name": "TxniLib",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 3743339,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/txnilib-forge-1.0.24-1.20.1.jar",
-            "MD5": "31823d0999fda413af6dc226481e404a"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "net.blay09.mods:waystones:14.1.17@jar",
-          "name": "Waystones",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 518288,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/waystones-forge-1.20.1-14.1.17.jar",
-            "MD5": "035eeccd86c7c0a00582b913e264aa81"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "xaero.minimap:xaerominimap:25.2.10@jar",
-          "name": "Xaero's Minimap",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1723029,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/Xaeros_Minimap_25.2.10_Forge_1.20.jar",
-            "MD5": "2b2bfaf3a1872b83c57aaa51c73f10d9"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "xaero.map:xaeroworldmap:1.39.12@jar",
-          "name": "Xaero's World Map",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 960799,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/forgemods/optionalon/XaerosWorldMap_1.39.12_Forge_1.20.jar",
-            "MD5": "002d9a661be7e982db177d7b0fc8d49e"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "oculus.properties",
-          "name": "oculus.properties",
+          "id": "iris.properties",
+          "name": "iris.properties",
           "type": "File",
           "artifact": {
             "size": 285,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/config/oculus.properties",
-            "path": "config/oculus.properties"
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/config/iris.properties",
+            "path": "config/iris.properties"
           }
         },
         {
-          "id": "options.txt",
-          "name": "options.txt",
+          "id": "AstraLex_V93.0.zip",
+          "name": "AstraLex_V93.0.zip",
           "type": "File",
           "artifact": {
-            "size": 145,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/options.txt",
-            "path": "options.txt"
-          }
-        },
-        {
-          "id": "servers.dat",
-          "name": "servers.dat",
-          "type": "File",
-          "artifact": {
-            "size": 194,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/servers.dat",
-            "MD5": "3bd0c225166e50d8390bddb3bd36058d",
-            "path": "servers.dat"
-          }
-        },
-        {
-          "id": "AstraLex_V89.0.zip",
-          "name": "AstraLex_V89.0.zip",
-          "type": "File",
-          "artifact": {
-            "size": 3180580,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/shaderpacks/AstraLex_V89.0.zip",
-            "MD5": "ab0247fddf9b4aa21343f0c0ae7aaf29",
-            "path": "shaderpacks/AstraLex_V89.0.zip"
+            "size": 3184524,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/shaderpacks/AstraLex_V93.0.zip",
+            "MD5": "021c95bd3d217b4a7e45997d5127285b",
+            "path": "shaderpacks/AstraLex_V93.0.zip"
           }
         },
         {
@@ -1274,31 +720,75 @@
           "type": "File",
           "artifact": {
             "size": 1121678,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/shaderpacks/BSL_v10.0.zip",
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/shaderpacks/BSL_v10.0.zip",
             "MD5": "a4d53a8d2a97d99e4e9ebc16eae7a39c",
             "path": "shaderpacks/BSL_v10.0.zip"
           }
         },
         {
-          "id": "ComplementaryUnbound_r5.5.1.zip",
-          "name": "ComplementaryUnbound_r5.5.1.zip",
+          "id": "ComplementaryReimagined_r5.6.1.zip",
+          "name": "ComplementaryReimagined_r5.6.1.zip",
           "type": "File",
           "artifact": {
-            "size": 456332,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/shaderpacks/ComplementaryUnbound_r5.5.1.zip",
-            "MD5": "576ef06da170458879f3a03e685d487a",
-            "path": "shaderpacks/ComplementaryUnbound_r5.5.1.zip"
+            "size": 500696,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/shaderpacks/ComplementaryReimagined_r5.6.1.zip",
+            "MD5": "04c822b2da584e21745869190ac653e6",
+            "path": "shaderpacks/ComplementaryReimagined_r5.6.1.zip"
           }
         },
         {
-          "id": "photon_v1.2a.zip",
-          "name": "photon_v1.2a.zip",
+          "id": "ComplementaryUnbound_r5.6.1.zip",
+          "name": "ComplementaryUnbound_r5.6.1.zip",
           "type": "File",
           "artifact": {
-            "size": 3737845,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/naru_o3o-1.20.1/files/shaderpacks/photon_v1.2a.zip",
-            "MD5": "9189fd0de30af6ea20765a8f05380583",
-            "path": "shaderpacks/photon_v1.2a.zip"
+            "size": 500699,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/shaderpacks/ComplementaryUnbound_r5.6.1.zip",
+            "MD5": "3f83f81df2ad4608d830017425b45bac",
+            "path": "shaderpacks/ComplementaryUnbound_r5.6.1.zip"
+          }
+        },
+        {
+          "id": "MakeUp-UltraFast-9.3e.zip",
+          "name": "MakeUp-UltraFast-9.3e.zip",
+          "type": "File",
+          "artifact": {
+            "size": 395165,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/shaderpacks/MakeUp-UltraFast-9.3e.zip",
+            "MD5": "a660004324fce7804871ddf301b127f2",
+            "path": "shaderpacks/MakeUp-UltraFast-9.3e.zip"
+          }
+        },
+        {
+          "id": "Noble v1.8.4.zip",
+          "name": "Noble v1.8.4.zip",
+          "type": "File",
+          "artifact": {
+            "size": 11480841,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/shaderpacks/Noble%20v1.8.4.zip",
+            "MD5": "bce38b5c7a916683e8e7a0e924249fe5",
+            "path": "shaderpacks/Noble v1.8.4.zip"
+          }
+        },
+        {
+          "id": "Sildur's Vibrant Shaders v1.541 Lite.zip",
+          "name": "Sildur's Vibrant Shaders v1.541 Lite.zip",
+          "type": "File",
+          "artifact": {
+            "size": 148481,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/shaderpacks/Sildur's%20Vibrant%20Shaders%20v1.541%20Lite.zip",
+            "MD5": "f2ab1ced3ce24508bb6a75f230183492",
+            "path": "shaderpacks/Sildur's Vibrant Shaders v1.541 Lite.zip"
+          }
+        },
+        {
+          "id": "Sildur's Vibrant Shaders v1.541 Medium.zip",
+          "name": "Sildur's Vibrant Shaders v1.541 Medium.zip",
+          "type": "File",
+          "artifact": {
+            "size": 148479,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.1/files/shaderpacks/Sildur's%20Vibrant%20Shaders%20v1.541%20Medium.zip",
+            "MD5": "73e9dca70c7ac2e7976821ec1e69e858",
+            "path": "shaderpacks/Sildur's Vibrant Shaders v1.541 Medium.zip"
           }
         }
       ]
