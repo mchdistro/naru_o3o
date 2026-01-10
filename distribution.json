@@ -131,13 +131,13 @@
           ]
         },
         {
-          "id": "generated.fabricmod:badpackets:0.8.2@jar",
+          "id": "generated.fabricmod:badpackets:0.11.2@jar",
           "name": "Bad Packets",
           "type": "FabricMod",
           "artifact": {
-            "size": 55638,
-            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.11/fabricmods/required/badpackets-fabric-0.8.2.jar",
-            "MD5": "89967dbf01cad805e4a4ced4e4497837"
+            "size": 54364,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.11/fabricmods/required/badpackets-fabric-0.11.2.jar",
+            "MD5": "3c3248b57a7ad18afd44da39bb81fc13"
           }
         },
         {
