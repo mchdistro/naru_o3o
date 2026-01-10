@@ -3,9 +3,9 @@
   "meta": {
     "version": "1.0.0",
     "name": "원블럭",
-    "description": "Minecraft 1.21.1 (Forge v52.1.8)",
+    "description": "Minecraft 1.21.11 (Fabric v0.18.4)",
     "icon": "https://github.com/mchdistro/naru_o3o/raw/main/server-icon.png",
-    "address": "localhost:25565",
+    "address": "mc.gotiger.dev:20206",
     "discord": {
       "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
       "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
@@ -29,8 +29,8 @@
       }
     }
   },
-  "forge": {
-    "version": "52.1.8"
+  "fabric": {
+    "version": "0.18.4"
   },
   "untrackedFiles": [
     {
