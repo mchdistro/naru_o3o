@@ -191,6 +191,16 @@
           }
         },
         {
+          "id": "generated.fabricmod:iris:1.10.4+mc1.21.11@jar",
+          "name": "Iris",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2795436,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.11/fabricmods/required/iris-fabric-1.10.4+mc1.21.11.jar",
+            "MD5": "697f2e0b37fa335a5a815237690466c9"
+          }
+        },
+        {
           "id": "mezz.jei:jei:27.4.0.15@jar",
           "name": "Just Enough Items",
           "type": "FabricMod",
@@ -208,6 +218,16 @@
             "size": 645861,
             "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.11/fabricmods/required/libIPN-fabric-1.21.11-6.6.2.jar",
             "MD5": "81875261212526582f07f9789a3e5292"
+          }
+        },
+        {
+          "id": "net.caffeinemc.mods:sodium:0.8.2+mc1.21.11@jar",
+          "name": "Sodium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 1876396,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.11/fabricmods/required/sodium-fabric-0.8.2+mc1.21.11.jar",
+            "MD5": "48b94db165ff1d51c3aa440287dd8b7c"
           }
         },
         {
@@ -231,6 +251,16 @@
           }
         },
         {
+          "id": "options.txt",
+          "name": "options.txt",
+          "type": "File",
+          "artifact": {
+            "size": 389,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.11/files/options.txt",
+            "path": "options.txt"
+          }
+        },
+        {
           "id": "1.3.5-backpacks_rscp-1.21.11.zip",
           "name": "1.3.5-backpacks_rscp-1.21.11.zip",
           "type": "File",
@@ -239,6 +269,17 @@
             "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.11/files/resourcepacks/1.3.5-backpacks_rscp-1.21.11.zip",
             "MD5": "d1cce405794bf9cf32e8d691cda6e0d2",
             "path": "resourcepacks/1.3.5-backpacks_rscp-1.21.11.zip"
+          }
+        },
+        {
+          "id": "servers.dat",
+          "name": "servers.dat",
+          "type": "File",
+          "artifact": {
+            "size": 70211,
+            "url": "https://github.com/mchdistro/naru_o3o/raw/main/servers/oneBlock-1.21.11/files/servers.dat",
+            "MD5": "f10582226a673578682d609500163335",
+            "path": "servers.dat"
           }
         },
         {
